@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Multi-Agent Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+<div class="container">
+  <header class="header">
+    <h1>Finance Multi-Agent Demo</h1>
+    <p class="sub">Ask about price, news, sentiment, technicals, fundamentals, compare.</p>
+  </header>
+
+  <div class="layout">
+    <!-- Left: input -->
+    <section class="panel">
+      <div class="inputRow">
+        <input id="query" type="text" placeholder='Try: "why did AAPL move today"' />
+        <button id="askBtn" class="primary">Ask</button>
+        <button id="clearBtn" class="secondary">Clear</button>
+      </div>
+
+      <div class="chips">
+        <button class="chip" data-q="latest news about AAPL">latest news about AAPL</button>
+        <button class="chip" data-q="why did TSLA move today">why did TSLA move today</button>
+        <button class="chip" data-q="NVDA technical analysis">NVDA technical analysis</button>
+        <button class="chip" data-q="AAPL vs MSFT">AAPL vs MSFT</button>
+        <button class="chip" data-q="AAPL sentiment today">AAPL sentiment today</button>
+      </div>
+
+      <section id="status" class="status hidden"></section>
+
+      <footer class="footer">
+        <span>Backend <code id="apiBase">http://127.0.0.1:8000</code></span>
+        <span>Tip: press Enter to ask</span>
+      </footer>
+    </section>
+
+    <!-- Right: answer -->
+    <section class="panel">
+      <div class="cardHeader">
+        <h2>Answer</h2>
+        <span id="badge" class="badge hidden"></span>
+      </div>
+      <pre id="answer" class="answer">Ready.</pre>
+    </section>
+  </div>
+</div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
