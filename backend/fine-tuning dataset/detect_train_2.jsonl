@@ -1,0 +1,53 @@
+{"input_text":"Analyze AAPL technical indicators","output_text":"intent=technical_analysis; tickers=[AAPL]"}
+{"input_text":"What is the price of TSLA today","output_text":"intent=price; tickers=[TSLA]"}
+{"input_text":"Show NVDA trading volume","output_text":"intent=volume; tickers=[NVDA]"}
+{"input_text":"Latest news on MSFT","output_text":"intent=news; tickers=[MSFT]"}
+{"input_text":"Analyze SPY trend","output_text":"intent=trend; tickers=[SPY]"}
+{"input_text":"Check volatility of QQQ","output_text":"intent=volatility; tickers=[QQQ]"}
+{"input_text":"Give me AAPL fundamentals","output_text":"intent=fundamental_analysis; tickers=[AAPL]"}
+{"input_text":"Compare AAPL and MSFT prices","output_text":"intent=compare; tickers=[AAPL, MSFT]"}
+{"input_text":"Show TSLA technical indicators","output_text":"intent=technical_analysis; tickers=[TSLA]"}
+{"input_text":"What is NVDA stock price","output_text":"intent=price; tickers=[NVDA]"}
+
+{"input_text":"Volume trend of AAPL","output_text":"intent=volume; tickers=[AAPL]"}
+{"input_text":"Any news about TSLA","output_text":"intent=news; tickers=[TSLA]"}
+{"input_text":"Analyze MSFT stock trend","output_text":"intent=trend; tickers=[MSFT]"}
+{"input_text":"How volatile is NVDA","output_text":"intent=volatility; tickers=[NVDA]"}
+{"input_text":"Fundamental analysis of MSFT","output_text":"intent=fundamental_analysis; tickers=[MSFT]"}
+{"input_text":"Compare NVDA and AMD","output_text":"intent=compare; tickers=[NVDA, AMD]"}
+{"input_text":"SPY technical analysis","output_text":"intent=technical_analysis; tickers=[SPY]"}
+{"input_text":"QQQ price today","output_text":"intent=price; tickers=[QQQ]"}
+{"input_text":"Trading volume of MSFT","output_text":"intent=volume; tickers=[MSFT]"}
+{"input_text":"Latest earnings of AAPL","output_text":"intent=earnings; tickers=[AAPL]"}
+
+{"input_text":"Analyze QQQ trend","output_text":"intent=trend; tickers=[QQQ]"}
+{"input_text":"Volatility analysis for TSLA","output_text":"intent=volatility; tickers=[TSLA]"}
+{"input_text":"General info about NVDA","output_text":"intent=general_info; tickers=[NVDA]"}
+{"input_text":"Compare SPY and QQQ performance","output_text":"intent=compare; tickers=[SPY, QQQ]"}
+{"input_text":"MSFT earnings outlook","output_text":"intent=earnings; tickers=[MSFT]"}
+{"input_text":"Technical indicators for NVDA","output_text":"intent=technical_analysis; tickers=[NVDA]"}
+{"input_text":"Check SPY volume","output_text":"intent=volume; tickers=[SPY]"}
+{"input_text":"Latest news on AAPL","output_text":"intent=news; tickers=[AAPL]"}
+{"input_text":"Fundamentals of TSLA","output_text":"intent=fundamental_analysis; tickers=[TSLA]"}
+{"input_text":"General info on SPY","output_text":"intent=general_info; tickers=[SPY]"}
+
+{"input_text":"Price of MSFT","output_text":"intent=price; tickers=[MSFT]"}
+{"input_text":"Analyze AAPL trend","output_text":"intent=trend; tickers=[AAPL]"}
+{"input_text":"NVDA earnings report","output_text":"intent=earnings; tickers=[NVDA]"}
+{"input_text":"Compare AAPL vs TSLA","output_text":"intent=compare; tickers=[AAPL, TSLA]"}
+{"input_text":"Volume of QQQ","output_text":"intent=volume; tickers=[QQQ]"}
+{"input_text":"Technical analysis for MSFT","output_text":"intent=technical_analysis; tickers=[MSFT]"}
+{"input_text":"Volatility of SPY","output_text":"intent=volatility; tickers=[SPY]"}
+{"input_text":"General information about QQQ","output_text":"intent=general_info; tickers=[QQQ]"}
+
+{"input_text":"Check volume of AAPL","output_text":"intent=volume; tickers=[AAPL]"}
+{"input_text":"Analyze QQQ technical indicators","output_text":"intent=technical_analysis; tickers=[QQQ]"}
+{"input_text":"What is NVDA stock price","output_text":"intent=price; tickers=[NVDA]"}
+{"input_text":"Trend of MSFT stock","output_text":"intent=trend; tickers=[MSFT]"}
+{"input_text":"Recent news on AAPL","output_text":"intent=news; tickers=[AAPL]"}
+{"input_text":"Fundamentals of TSLA","output_text":"intent=fundamental_analysis; tickers=[TSLA]"}
+{"input_text":"Compare AAPL vs TSLA","output_text":"intent=compare; tickers=[AAPL, TSLA]"}
+{"input_text":"SPY volatility analysis","output_text":"intent=volatility; tickers=[SPY]"}
+{"input_text":"QQQ earnings info","output_text":"intent=earnings; tickers=[QQQ]"}
+{"input_text":"General info about NVDA","output_text":"intent=general_info; tickers=[NVDA]"}
+
