@@ -6,3 +6,4 @@ transformers
 accelerate
 finnhub-python
 python-dotenv
+os
