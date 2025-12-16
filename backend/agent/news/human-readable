@@ -1,1 +1,37 @@
+from datetime import datetime, timezone
+
+def format_news_items(items):
+    lines = []
+    for it in items:
+        if "error" in it:
+            lines.append(f"⚠️ Finnhub error: {it['error']}")
+            continue
+
+        ts = it.get("datetime")
+        date_str = (
+            datetime.fromtimestamp(ts, timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+            if ts else "N/A"
+        )
+
+        headline = it.get("headline","").strip()
+        source = it.get("source","").strip()
+        url = it.get("url","").strip()
+
+        lines.append(f"- [{date_str}] {headline} ({source})\n  {url}")
+
+    return "\n".join(lines) if lines else "No news returned."
+
+
+def format_fundamentals(d: dict):
+    if not d:
+        return "No fundamentals returned."
+    if "error" in d:
+        return f"⚠️ Finnhub fundamentals error: {d['error']}"
+
+    lines = [f"📊 Fundamentals for {d.get('ticker','')}:"]
+    for k, v in d.items():
+        if k == "ticker":
+            continue
+        lines.append(f"- {k}: {v}")
+    return "\n".join(lines)
 
