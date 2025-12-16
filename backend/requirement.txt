@@ -1,1 +1,8 @@
-
+yfinance
+pandas
+numpy
+torch
+transformers
+accelerate
+finnhub-python
+python-dotenv
