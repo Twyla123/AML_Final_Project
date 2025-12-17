@@ -1,0 +1,21 @@
+# --- Security (Ignore API Keys) ---
+.env
+backend/.env
+
+# --- Heavy AI Models ---
+model_final/
+backend/model_final/
+
+# --- Python Virtual Environments ---
+.venv/
+backend/.venv/
+venv/
+env/
+
+# --- Python Cache & Bytecode ---
+__pycache__/
+*.pyc
+
+# --- System & IDE Files ---
+.DS_Store
+.vscode/
