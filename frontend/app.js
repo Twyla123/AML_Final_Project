@@ -1,4 +1,4 @@
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://interrogatively-untame-terrence.ngrok-free.dev";
 
 const elQuery = document.getElementById("query");
 const elAsk = document.getElementById("askBtn");
@@ -32,16 +32,19 @@ async function ask(query) {
   elAsk.disabled = true;
 
   try {
-    const res = await fetch(`${API_BASE}/ask`, {
+    const res = await fetch(`${API_BASE}/predict`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ query }),
+      body: JSON.stringify({ input: query }),
     });
 
     const data = await res.json();
 
     if (!res.ok) {
-      setStatus(data?.detail ? JSON.stringify(data.detail) : "Request failed.", true);
+      setStatus(
+        data?.detail ? JSON.stringify(data.detail) : "Request failed.",
+        true
+      );
       setBadge("Error");
       elAns.textContent = "";
       return;
@@ -49,7 +52,8 @@ async function ask(query) {
 
     setStatus("", false);
     setBadge("OK");
-    elAns.textContent = data.answer ?? "(empty)";
+
+    elAns.textContent = data.result ?? "(empty)";
   } catch (e) {
     setStatus(`Network error: ${e?.message || e}`, true);
     setBadge("Error");
