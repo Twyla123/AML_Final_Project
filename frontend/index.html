@@ -1,61 +1,61 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Finance Multi-Agent Demo</title>
+    <title>Finance Multi-Agent Terminal</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-<div class="container">
-  <header class="header">
-    <h1>Finance Multi-Agent Demo</h1>
-    <p class="sub">Ask about price, news, sentiment, technicals, fundamentals, compare.</p>
-  </header>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Finance Multi-Agent <span class="accent">Terminal</span></h1>
+            <p class="sub">Advanced cross-agent financial analysis and multi-ticker comparison.</p>
+        </header>
 
-  <div class="layout">
-    <!-- Left: input -->
-    <section class="panel">
-      <div class="inputRow">
-        <input id="query" type="text" placeholder='Try: "why did AAPL move today"' />
-        <button id="askBtn" class="primary">Ask</button>
-        <button id="clearBtn" class="secondary">Clear</button>
-      </div>
+        <div class="layout">
+            <section class="panel">
+                <div class="inputRow">
+                    <input id="query" type="text" placeholder='Analyze AAPL vs MSFT sentiment...' />
+                    <button id="askBtn" class="primary">Analyze</button>
+                    <button id="clearBtn" class="secondary">Clear</button>
+                </div>
 
-      <div class="chips">
-        <button class="chip" data-q="latest news about AAPL">latest news about AAPL</button>
-        <button class="chip" data-q="AAPL sentiment today">AAPL sentiment today</button>
-        <button class="chip" data-q="Compare AAPL and MSFT price performance today">Compare Price: AAPL vs MSFT</button>
-        <button class="chip" data-q="compare AAPL vs MSFT sentiment and technical">Compare Tech/Sent: AAPL vs MSFT</button>
+                  <div class="chips">
+                    <button class="chip" data-q="latest news about AAPL">latest news about AAPL</button>
+                    <button class="chip" data-q="AAPL sentiment today">AAPL sentiment today</button>
+                    <button class="chip" data-q="Compare AAPL and MSFT price performance today">Compare Price: AAPL vs MSFT</button>
+                    <button class="chip" data-q="compare AAPL vs MSFT sentiment and technical">Compare Tech/Sent: AAPL vs MSFT</button>
 
-        <button class="chip" data-q="Give me the technical view for AAPL">Technical View AAPL</button>
-        <button class="chip" data-q="What does the technical risk profile look like for META?">META Risk Profile</button>
+                    <button class="chip" data-q="Give me the technical view for AAPL">Technical View AAPL</button>
+                    <button class="chip" data-q="What does the technical risk profile look like for META?">META Risk Profile</button>
 
-        <button class="chip" data-q="AAPL price today">AAPL Price Today</button>
-        <button class="chip" data-q="What were the high and low prices of AAPL today?">AAPL High/Low</button>
+                    <button class="chip" data-q="AAPL price today">AAPL Price Today</button>
+                    <button class="chip" data-q="What were the high and low prices of AAPL today?">AAPL High/Low</button>
 
-        <button class="chip" data-q="Give me a bullish thesis for AAPL">Bullish Thesis AAPL</button>
-        <button class="chip" data-q="analyze QQQ">Analyze QQQ</button>
-      </div>
+                    <button class="chip" data-q="Give me a bullish thesis for AAPL">Bullish Thesis AAPL</button>
+                    <button class="chip" data-q="analyze QQQ">Analyze QQQ</button>
+                  </div>
 
-      <section id="status" class="status hidden"></section>
+                <div id="status" class="status hidden"></div>
 
-      <footer class="footer">
-        <span>Tip: press Enter to ask</span>
-      </footer>
-    </section>
+                <footer class="footer">
+                    <div class="status-dot"></div>
+                    <span>Ready for Query</span>
+                    <span id="apiBase" style="display:none"></span>
+                </footer>
+            </section>
 
-    <!-- Right: answer -->
-    <section class="panel">
-      <div class="cardHeader">
-        <h2>Answer</h2>
-        <span id="badge" class="badge hidden"></span>
-      </div>
-      <pre id="answer" class="answer">Ready.</pre>
-    </section>
-  </div>
-</div>
-
+            <section class="panel">
+                <div class="cardHeader">
+                    <h2>Intelligence Output</h2>
+                    <span id="badge" class="badge hidden"></span>
+                </div>
+                <div id="answer" class="answer">Ready.</div>
+            </section>
+        </div>
+    </div>
     <script src="./app.js"></script>
-  </body>
+</body>
 </html>
